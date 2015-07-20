@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/index' => 'static_pages#index'
+
   root 'home#index'
   post 'add/products' => 'products#create'
   # The priority is based upon order of creation: first created -> highest priority.
